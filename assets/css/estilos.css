@@ -1,7 +1,7 @@
 :root {
   --bs-primary: #010919; /* Primary dark background */
   --bs-secondary: #111f30; /* Secondary dark shade */
-  --bs-success: #2e3c4d; /* Accent dark */
+  --bs-success: #294b63; /* Accent dark */
   --bs-info: #838a94; /* Light accent */
   --bs-light: #dde2e6; /* Bright accent */
 }
@@ -25,8 +25,26 @@ body {
 }
 
 .btn-primary {
-  background-color: var(--bs-success);
-  border-color: var(--bs-success);
+  background-color: var(--bs-secondary) !important; /* Color de fondo */
+  border-color: var(--bs-secondary); /* Color del borde */
+  color: var(--bs-light); /* Color del texto */
+}
+
+.btn-primary:hover {
+  background-color: var(--bs-success) !important; /* Color de fondo al pasar el mouse */
+  color: var(--bs-light); /* Color del texto al pasar el mouse, ajusta si es necesario */
+  border-color: var(--bs-light); /* Color del borde */
+}
+.btn-secondary {
+  background-color: var(--bs-secondary) !important; /* Color de fondo */
+  border-color: var(--bs-secondary); /* Color del borde */
+  color: var(--bs-light); /* Color del texto */
+}
+
+.btn-secondary:hover {
+  background-color: var(--bs-success) !important; /* Color de fondo al pasar el mouse */
+  color: var(--bs-light); /* Color del texto al pasar el mouse, ajusta si es necesario */
+  border-color: var(--bs-light); /* Color del borde */
 }
 
 .btn-info {
