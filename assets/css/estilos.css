@@ -1,3 +1,11 @@
+:root {
+  --bs-primary: #010919; /* Primary dark background */
+  --bs-secondary: #111f30; /* Secondary dark shade */
+  --bs-success: #2e3c4d; /* Accent dark */
+  --bs-info: #838a94; /* Light accent */
+  --bs-light: #dde2e6; /* Bright accent */
+}
+
 body {
   font-family: "Raleway", sans-serif;
 }
@@ -9,9 +17,32 @@ body {
   background-repeat: no-repeat;
   background-size: cover;
   background-position: left;
+  background-color: var(--bs-primary);
+  color: var(--bs-light);
+}
+.navbar {
+  background-color: var(--bs-secondary);
+}
+
+.btn-primary {
+  background-color: var(--bs-success);
+  border-color: var(--bs-success);
+}
+
+.btn-info {
+  background-color: var(--bs-info);
+  border-color: var(--bs-info);
+}
+
+.text-light {
+  color: var(--bs-light);
 }
 
 /* Mis trabajos */
+
+#Mis-trabajos{
+  background-color: var(--bs-secondary);
+}
 
 #Mis-trabajos .image-top {
   height: 250px;
@@ -36,4 +67,8 @@ body {
     width: 100px;
   }
 
+}
+
+footer {
+  background-color: var(--bs-secondary);
 }
