@@ -57,6 +57,10 @@ body {
   color: var(--bs-light);
 }
 
+.bg-custom {
+  background-color: rgba(0, 0, 0, 0.5) !important;
+}
+
 /* Mis trabajos */
 
 #Mis-trabajos{
